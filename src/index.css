@@ -69,8 +69,8 @@
 
 
 .verificationHome {
-    background-image: url(../public/bg.jpg);
-    background-size: cover;
+    background: rgb(25,44,69);
+    background: linear-gradient(90deg, rgba(25,44,69,1) 11%, rgba(66,97,129,1) 33%, rgba(18,34,51,1) 69%);
     width: 100%;
     height: 100%;
 }
