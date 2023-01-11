@@ -1,0 +1,1323 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+}
+
+@keyframes displayName {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes changeColor {
+    0% {background: transparent;}
+    10% {border-bottom: 2px transparent;}
+    100% {background: #00b3ff;}
+}
+
+#Link {
+    text-decoration: none;
+    color: #000626;
+}
+
+#LinkWhite {
+    text-decoration: none;
+    color: #fff;
+}
+
+#root {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+}
+
+.arRoom {
+    width: 100%;
+    height: 100%;
+    background: url("/public/img2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background: #222431;
+}
+
+#home {
+    width: 100%;
+    height: 700px;
+}
+
+#footer {
+    width: 100%;
+    height: 180px;
+}
+
+
+.verificationHome {
+    background-image: url(../public/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#verificationTopNav {
+    width: 100%;
+    height: 100px;
+    margin-top: -0; 
+}
+
+
+header {
+    width: 100%;
+    color: #222431;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+
+.headerBox_1 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 11px 3px #00b3ff;
+}
+
+.headerBox_2 {
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    border-top: 5px solid #00b3ff;
+    border-right: 5px solid #00b3ff;
+    border-left: 5px solid #00b3ff;
+    border-bottom: none;
+    display: flex;
+    box-shadow: inset 2px 2px 11px 2px #222431;
+    justify-content: flex-start;
+}
+
+
+.logo {
+    animation-name: displayName;
+    animation-duration: 2s;
+    margin-top: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_img_1 {
+    width: 15%;
+    height: 65%;
+}
+
+.logo_img_2 {
+    width: 75%;
+    height: 50%;
+}
+
+.navigation {
+    animation-name: displayName;
+    animation-duration: 2s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation_ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 2px solid #00b3ff;
+    color: aliceblue;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.navigation_ul li:hover {
+    background: #00b3ff;
+    animation-name: changeColor;
+    animation-duration: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 1px 11px 3px #00b3ff;
+}
+
+.headerBox_2 .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerBox_2 .navigation_ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerBox_2 .navigation_ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 2px solid #00b3ff;
+    color: #222431;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.headerBox_2 .navigation_ul li:hover {
+    background: #00b3ff;
+    animation-name: changeColor;
+    animation-duration: 0.5s;
+}
+
+.info {
+    width: 100%;
+    height: 65%;
+    position: relative;
+    display: flex;
+}
+
+.content {
+    animation-name: displayName;
+    animation-duration: 2s;
+    width: 70%;
+    height: 100%;
+}
+
+.content a {
+    padding: 10px 30px;
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+}
+
+.content a:hover, i:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.explore {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border-right: 5px solid #00b3ff;
+    border-left: 5px solid #00b3ff;
+    border-top: none;
+}
+
+.explore h1 {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.exp {
+    width: 10%;
+    height: 30%;
+    background: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.exp img{
+    width: 100%;
+    height: 100%;
+}
+
+.exp-1 {
+    position: absolute;
+    top: 10%;
+    left: 72%;
+}
+
+.exp-2 {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+
+.exp-3 {
+    position: absolute;
+    top: 45%;
+    left: 72%;
+}
+
+.exp-4 {
+    position: absolute;
+    top: 55%;
+    right: 3%;
+}
+
+.exp-5 {
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    z-index: 1;
+    background: #88bb5a;
+}
+
+.exp-6 {
+    position: absolute;
+    top: 90%;
+    right: 3%;
+    z-index: 1;
+    background: #af63b7;
+
+}
+
+.textBx-1 {
+    margin: 5% 20% 0% 5%;
+    color: #fff;
+    padding: 5px;
+}
+
+.textBx-1 h1 {
+    font-size: 50px;
+}
+
+.textBx-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 20% 0% 5%;
+    height: 200px;
+    color: #fff;
+    border: 1px dashed #00b3ff;
+    padding: 5px;
+}
+
+.textBx-2 div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 20%;
+    background: #00b3ff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.i {
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+.textBx-2 div h6 {
+    text-align: center;
+    padding: 5px;
+}
+
+.textBx-3 {
+    margin: 2% 20% 0% 5%;
+    color: #fff;
+    background: #00b3ff;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+#instagram, #email, #linkedin, #twitter {
+    margin: 10px;
+}
+
+#instagram {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#linkedin {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#email {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#twitter {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer_1 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer_2 {
+    width: 30%;
+    height: 97%;
+    background: #fff;
+    border-left: 5px solid #00b3ff;
+    border-right: 5px solid #00b3ff;
+    border-bottom: 5px solid #00b3ff;
+    border-top: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.webImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.policy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.policy ul {
+    display: flex;
+    margin: 10px;
+    list-style: none;
+ }
+
+ 
+ .policy ul li{
+    margin: 10px;
+    color: #fff;
+    padding: 5px;
+ }
+
+ .policy ul li:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+}
+
+.copyRights p {
+    text-align: center;
+}
+
+ .copyrightIcon {
+    margin-left: 5px;
+    margin-right: 5px;
+ }
+
+
+button {
+    cursor: pointer;
+    transition: 0.5;
+    border: navy;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.pis {
+    margin-top: 1%;
+    width: 5%;
+    height: 100%;
+}
+
+.signup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000626;
+}
+
+.signup-box {
+    width: 40%;
+    height: 80%;
+    margin: 0% 33%;
+}
+
+.pslogo_signup {
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pslogo_signup_img_1 {
+    width: 15%;
+    height: 65%;
+}
+
+.pslogo_signup_img_2 {
+    width: 75%;
+    height: 50%;
+}
+
+.signup-box h2, .signup-box h3, .signup-box h4,  .signup-box h5 {
+    margin: 5% 0%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.form-signup {
+    width: 100%;
+    height: 100%;
+}
+
+.form-signup input {
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    height: 10%;
+    margin: 0% 5%;
+}
+
+.gender {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.male, .female {
+    height: 100%;
+    width: 30%;
+    background: #00b3ff;
+}
+
+.male {
+    margin-left: 10%;
+}
+
+.female {
+    margin-right: 10%;
+}
+
+.continue-btn {
+    height: 5%;
+    width: 30%;
+    margin: 0% 35%;
+    background: #00b3ff;
+    color: #fff;
+}
+
+.continue-btn-loading {
+    height: 5%;
+    width: 30%;
+    margin: 0% 35%;
+    background: #00b3ff;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.login-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.login-page-right {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.login-page-left {
+    width: 50%;
+    height: 100%;
+    background: #000626;
+}
+
+
+.pslogo {
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pslogo_img_1 {
+    width: 15%;
+    height: 65%;
+}
+
+.pslogo_img_2 {
+    width: 75%;
+    height: 50%;
+}
+
+.infomation {
+    color: #fff;
+    margin: 25% 5% ;
+}
+
+.login-page-right h3 {
+    margin: 5% 0 0 5%;
+    font-size: 40px;
+}
+
+.login-page-right h4 {
+    margin: 5% 0 0 5%;
+}
+
+
+.login-box {
+    width: 90%;
+    margin: 5% 0%;
+    height: 70%;
+}
+
+.login-form {
+    height: 100%;
+    width: 100%;
+}
+
+.login-form h2, .login-form h3, .login-form h4, .login-form h5{
+    text-align: left;
+}
+
+.login-form-h4 {
+    display: none;
+    align-items: center;
+    text-align: center;
+    background-color: #b51527;
+    width: 100%;
+    height: 5vh;
+    color: #fff;
+}
+
+.login-form-h4-success {
+    background-color: #09be4f;
+    width: 100%;
+    height: 5vh;
+    color: #fff;
+}
+
+.login-form input {
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    width: 90%;
+    height: 10%;
+    margin: 5% 5%;
+}
+
+.next-btn {
+    height: 10%;
+    width: 30%;
+    margin: 3% 5%;
+    background: #000626;
+    color: #fff;
+}
+
+.next-btn-loading {
+    height: 10%;
+    width: 30%;
+    margin: 3% 5%;
+    background: #000626;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.goLink {
+    color: #000;
+}
+
+.goLink_signup {
+    color: #00b3ff;
+}
+
+.main-content {
+    width: 50%;
+    height: 40%;
+    margin: 5% 25%;
+    text-align: center;
+    color: #fff;
+}
+
+.main-content h1 {
+    font-size: 50px;
+}
+
+.main-content h3 {
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.main-content-button {
+    width: 30%;
+    padding: 5px;
+    margin-top: 3%;
+    background: #00b3ff;
+    color: #fff;
+}
+
+.main-content-False-button{
+    width: 30%;
+    padding: 5px;
+    margin-top: 3%;
+    background: #00b3ff;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.main-content h5 {
+    margin-top: 20px;
+}
+
+
+.chatHome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+}
+
+.chatBox {
+    border-top: 5px #fff;
+    width: 70%;
+    height: 100%;
+    background: rgb(25,44,69);
+    background: linear-gradient(90deg, rgba(25,44,69,1) 11%, rgba(66,97,129,1) 33%, rgba(18,34,51,1) 69%);
+}
+
+.others {
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgb(25,44,69);
+    background: linear-gradient(90deg, rgba(25,44,69,1) 11%, rgba(66,97,129,1) 33%, rgba(18,34,51,1) 69%);
+
+}
+
+.others::-webkit-scrollbar {
+    width: 0.45rem;
+}
+  
+.others::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.others::-webkit-scrollbar-thumb {
+    background: #1e1e24;
+    border-radius: 25px;
+}
+
+.typeArea {
+    position: absolute;
+    /* bottom: 2%; */
+    width: 70%;
+    /* margin: 0 5%; */
+    height: 20vh;
+    border-top: 1px solid #fff;
+}
+
+.startChat {
+    width: 90%;
+    height: 90%;
+    margin: 0% 5%;
+}
+
+.suggestions {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 8vh;
+}
+
+.suggestions button {
+    width: 20%;
+    border-radius: 25px;
+    height: 6vh;
+    margin: 1vh;
+    color: #fff;
+    background: #00b3ff;
+}
+
+
+.suggestions button:last-child {
+    box-shadow: 0px 5px 20px 8px #000626;
+    border: 7px solid #000626;
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat form {
+    display: flex;
+    position: relative;
+    bottom: 0%; 
+    width: 100%;
+    height: 8vh;
+}
+
+.chat form input {
+    position: absolute;
+    right: 10%;
+    width: 80%;
+    height: 7vh;
+    float: right;
+    z-index: 1000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+.send {
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    width: 5%;
+    height: 6vh;
+    margin: 1vh;
+    background: #00b3ff;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.call {
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+    width: 5%;
+    height: 6vh;
+    margin: 1vh;
+    border-radius: 25px;
+    background: #00b3ff;
+    color: #fff;
+}
+
+
+.chatArea {
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+    border-left: 10px solid #000626;
+}
+
+.displayChat {
+    width: 90%;
+    margin: 0 5%;
+    height: 100%;
+}
+
+.chatArea::-webkit-scrollbar {
+    width: 0.45rem;
+}
+  
+.chatArea::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.chatArea::-webkit-scrollbar-thumb {
+    background: #000626;
+    border-radius: 25px;
+}
+
+.sent {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0;
+
+}
+
+.sent div {
+    margin: 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    max-width: 25vh;
+    background: #163b68;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 10%;
+}
+
+.sentTime {
+    font-size: 10px;
+    margin: 5px 0px 0px 30px;
+    float: right;
+}
+
+
+.recived {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin: 5px 0;
+
+}
+
+.recived div {
+    margin: 0 5px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    max-width: 25vh;
+    background: #00b3ff;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.sentTime {
+    font-size: 10px;
+    margin: 5px 30px 0px 0px;
+    float: left;
+}
+
+.reset {
+    width: 100%;
+}
+
+.resetBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10% 25%;
+}
+
+.resetBox h3 {
+    text-align: center;
+}
+
+.resetBox input {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    margin: 5% 15%;
+    text-align: center;
+}
+
+.resetBox button {
+    padding: 10px;
+    background: #00b3ff;
+    color: #fff;
+    margin: 0% 45%;
+    width: 10%;
+}
+
+.enterCode {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin: 10% 25%;
+}
+
+.enterCode h3 {
+    text-align: center;
+}
+
+.enterCode h4 {
+    text-align: center;
+}
+
+.enterCode h5 {
+    text-align: center;   
+}
+
+.enterCode input {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    margin: 5% 15%;
+    text-align: center;
+}
+
+
+.ResetPasswordBox {
+    width: 50%;
+    margin: 10% 25%;
+    height: 15rem;
+}
+
+.ResetPasswordBox form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ResetPasswordBox h3 {
+    position: relative;
+    margin-top: 5%;
+}
+
+.ResetPasswordBox input {
+    width: 80%;
+    margin: 5% 10%;
+    height: 8%;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    outline: none;
+}
+
+.ResetPasswordBox button {
+    background: #000626;
+    color: #fff;
+    padding: 10px;
+}
+
+.resendBtn {
+    padding: 5px;
+    background: #00b3ff;
+    color: #fff; 
+}
+
+.store {
+    width: 80%;
+    margin: 5% 10%;
+    height: 30%;
+    background: #f3f3f3;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.diary {
+    width: 80%;
+    height: 30%;
+    margin: 5% 10%;
+    background: #f3f3f3;
+    border-radius: 25px;
+}
+
+.notes {
+    width: 80%;
+    margin: 5% 10%;
+    height: 30%;
+    background: #f3f3f3;
+    border-radius: 25px;
+}
+
+.memory {
+    width: 80%;
+    margin: 5% 10%;
+    height: 30%;
+    background: #f3f3f3;
+    border-radius: 25px;
+}
+
+
+.othersHeader {
+    width: 100%;
+    height: 100%;
+}
+
+.storeHeader, .diaryHeader, .memoryHeader, .notesHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.storeHeader h3, .diaryHeader h3, .memoryHeader h3, .notesHeader h3,
+    .storeHeader h5, .diaryHeader h5, .memoryHeader h5, .notesHeader h5  {
+    margin: 5%;
+}
+
+.notesDiv {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.notesTemplate {
+    width: 35%;
+    height: 85%;
+    margin: 3%;
+    border-radius: 25px;
+    background: #fff;
+}
+
+.notesTemplate:last-child {
+    transform: rotate(15deg);
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.notesTemplate:first-child {
+    transform: rotate(340deg);
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
+.notesTemplate p:first-child {
+    padding: 10px;
+    background: #000626;
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.notesTemplate p:last-child {
+    padding: 5px;
+} 
+
+.memoryBox {
+    width: 100%;
+    height: 70%;
+}
+
+.memoryTemplate {
+    margin: 15px;
+}
+
+.diaryTemplate {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diaryTemplate textarea {
+    width: 80%;
+    height: 70%;
+    margin: 0% 10%;
+    resize: none;
+}
+
+.diaryTemplate button {
+    padding: 5px;
+    background: #000626;
+    color: #fff;
+    width: 30%;
+    margin: 5% 0%;
+}
+
+.storeDiv {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.storeTemplate {
+    width: 40%;
+    height: 80%;
+}
+
+.storeTemplate img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.storeTemplate P {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    margin-top: -24%;
+    border: 1px;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.storeTemplate p span {
+    margin: 0% 10%;
+}
+
+.gem {
+    color: gold;
+}
+
+.arHeader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.back button {
+    background: transparent;
+}
+
+.homePage, .gear, .music, .play {
+    font-size: 30px;
+    color: #fff;
+}
+
+.functions {
+    display: flex;
+    margin-right: 5%;
+}
+
+.functionsIcon {
+    margin: 0% 5%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.functionsIcon button {
+    background: transparent;
+}
+
+.arBody {
+    width: 100%;
+    height: 90%;
+}
+
+.aboutPage {
+    width: 100%;
+    background: #000626;
+}
+
+.aboutHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 11px 3px #00b3ff;
+}
+
+.aboutLogo {
+    animation-name: displayName;
+    animation-duration: 2s;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutLogo_img_1 {
+    width: 10%;
+    height: 65%;
+}
+
+.aboutLogo_img_2 {
+    width: 75%;
+    height: 50%;
+}
+
+.imgInfo {
+    width: 100%;
+    height: 500px;
+    background: url("/public/aboutBg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.imgInfo_welcome {
+   position: absolute;
+   top: 5%;
+   width: 70%;
+   height: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #fff;
+}
+
+.imgInfo_h1 {
+    font-size: 70px;
+    margin: 10% 10% 2% 10%;
+}
+
+.imgInfo_p {
+    font-size: 17px;
+    margin: 0% 10% 10% 10%;
+}
+
+.pisciumValues {
+    width: 100%;
+    height: 400px;
+    background: brown;
+}
+
